@@ -1,11 +1,11 @@
-#include "libftprintf.h"
+#include "ft_printf.h"
 
-void    ft_unsigned_int_len(unsigned int u, int *len)
+void	ft_unsigned_int(unsigned int u, int *len)
 {
-        char    digit;
+	char	digit;
 
-        if (u > 9)
-                ft_unsigned_int_len(u / 10, len);
-        digit = (u % 10) + '0';
-        ft_putchar_len(digit, len);
+	if (u > 9)
+		ft_unsigned_int(u / 10, len);
+	digit = (u % 10) + '0';
+	ft_putchar_len(digit, len);
 }

@@ -1,7 +1,7 @@
-#include "libftprintf.h"
+#include "ft_printf.h"
 
-void    ft_putchar_len(char c, int *len)
+void	ft_putchar_len(char c, int *len)
 {
-        write(1, &c, 1);
-        (*len)++;
+	write(1, &c, 1);
+	(*len)++;
 }
