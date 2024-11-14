@@ -24,7 +24,7 @@ void	ft_puthex_len(unsigned int number, int *len, char x)
 	}
 	while (i)
 	{
-		ft_putchar_len(string[i], len);
 		i--;
+		ft_putchar_len(string[i], len);
 	}
 }

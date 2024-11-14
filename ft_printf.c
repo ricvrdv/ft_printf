@@ -36,7 +36,7 @@ static void	check_specifier(char sp, va_list *args, int *len, int *i)
 	else if (sp == 's')
 		ft_putstr_len(va_arg(*args, char *), len);
 	else if (sp == 'p')
-		ft_pointer_len(va_arg(*args, size_t), len);
+		ft_putpointer_len(va_arg(*args, size_t), len);
 	else if (sp == 'd' || sp == 'i')
 		ft_putnbr_len(va_arg(*args, int), len);
 	else if (sp == 'u')
@@ -49,4 +49,14 @@ static void	check_specifier(char sp, va_list *args, int *len, int *i)
 		ft_putchar_len('%', len);
 	else
 		(*i)--;
+}
+
+int	main()
+{
+	char	ch = 'r';
+	int		number = -42;
+	char	*string = "Hello world!";
+
+	ft_printf("Hello my name starts with an %c and I study at %u. %s\naddress: %p", ch, number, string, string);
+	return (0);
 }

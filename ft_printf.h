@@ -11,6 +11,6 @@ void	ft_putstr_len(char *s, int *len);
 void	ft_putnbr_len(int number, int *len);
 void	ft_unsigned_int(unsigned int u, int *len);
 void	ft_puthex_len(unsigned int number, int *len, char x);
-void	ft_pointer_len(size_t pointer, int *len);
+void	ft_putpointer_len(size_t pointer, int *len);
 
 #endif
