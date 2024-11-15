@@ -22,7 +22,7 @@ void	ft_puthex_len(unsigned int number, int *len, char x)
 		number = number / 16;
 		i++;
 	}
-	while (i)
+	while (i > 0)
 	{
 		i--;
 		ft_putchar_len(string[i], len);

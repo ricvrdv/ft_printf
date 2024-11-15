@@ -7,8 +7,8 @@ void	ft_putstr_len(char *s, int *len)
 	i = 0;
 	while (!s)
 	{
-		write(1, "(nil)", 5);
-		(*len) += 5;
+		write(1, "(null)", 6);
+		(*len) += 6;
 		return ;
 	}
 	while (s[i] != '\0')
