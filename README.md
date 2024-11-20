@@ -2,7 +2,7 @@
 
 ### [MILESTONE 1]
 ### SUMMARY
-The goal of this project was to recode the original libc function printf().
+The goal of this project was to recode the original libc function `printf()`.
 This custom function had to handle the following conversions: 
 | specifier | description                                                         |
 | --------- | ------------------------------------------------------------------- |
